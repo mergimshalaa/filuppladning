@@ -1,0 +1,14 @@
+### Retrieve file
+GET http://localhost:3000/api/file/64649c8c8218fda856930e09
+
+### Delete file
+DELETE http://localhost:3000/api/file/64649a5504f89d4e5edf4b47
+
+### Upload image
+POST http://localhost:3000/api/file
+Content-Type: multipart/form-data; boundary=FormDataRow
+
+
+### Tänk på följande:
+### ALLA boundary's måste BÖRJA med --
+### SISTA boundary'n måste AVSLUTAS med --
